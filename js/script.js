@@ -15,21 +15,17 @@ let texto = ('<html><head><title>Gulliver Traveller - Roteiros</title></head><bo
 
 
 
-// var arrStr = texto.split(/[*]/);
+var arrStr = texto.split(/[*]/);
 
-// for(var i=1; i<arrStr.length; i+=2){
-//         console.log(arrStr[i]);  
-// }
+for(var i=1; i<arrStr.length; i+=2){
+        console.log(arrStr[i]);  
+}
 
 var roteiro = texto.split(/[#]/);
 
 for(var i=1; i<roteiro.length; i+=3){
-        console.log(roteiro[i]);  
+        console.log(roteiro[i]);
+        var temp =  roteiro[i].split('<br>')
+         console.log(`Quantidade de ocorrencias: ${temp.length}`);
 }
-
-stringQuantidade = texto.split(' ',5);
-console.log(stringQuantidade);
-console.log(`Quantidade de ocorrencias: ${stringQuantidade.length}`);
-
-
 
