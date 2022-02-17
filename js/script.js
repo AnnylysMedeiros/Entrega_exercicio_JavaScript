@@ -21,10 +21,10 @@ for (var i = 1; i < cidade.length; i += 2) {
 var roteiro = texto.split(/[#]/);
 
 for (var i = 1; i < roteiro.length; i += 3) {
-    console.log('Conteúdo do ' + roteiro[i]);
+    console.log(`${roteiro[i].replace(/<br>/gi,'')}`);
     var temp = roteiro[i].split('<br>')[1].split(';');
     console.log(`Quantidade de pontos turisticos para visitar: ${temp.length}`);
-    console.log('Locais disponiveis no roteiro A: ' + temp);
+    console.log('Locais citados no roteiro A: ' + temp);
 }
 
 
